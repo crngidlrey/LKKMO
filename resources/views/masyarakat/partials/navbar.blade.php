@@ -79,7 +79,8 @@
   }
 
   .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #2C5A9D;
+    color: white;
     padding-left: 20px; /* Geser ke kanan saat hover */
   }
 
