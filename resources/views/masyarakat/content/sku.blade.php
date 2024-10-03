@@ -79,7 +79,7 @@
       </div>
 
       <div class="mt-5">
-          <button type="submit" class="bg-blue-500 text-white rounded-lg px-4 py-2">Kirim</button>
+          <button type="submit" class="bg-blue-500 text-white rounded-lg px-4 py-2">Submit</button>
       </div>
   </form>
 </div>
