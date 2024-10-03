@@ -1,5 +1,5 @@
 <div class="max-w-4xl mx-auto">
-  <h1 class="surat">Surat Keterangan Usaha</h1>
+  <h1 class="surat">Surat Keterangan Usaha (SKU)</h1>
   <form action="" class="form-container">
       <div class="mb-5">
           <label for="nama" class="block mb-2 text-sm font-medium text-white">Nama Lengkap</label>
