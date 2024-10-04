@@ -1,6 +1,4 @@
-<div class="footer">
-  <div class="tapis-footer"></div>
-</div>
+<div class="footer"></div>
 
 <style>
   .footer {
