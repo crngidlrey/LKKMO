@@ -16,6 +16,7 @@
   @include('masyarakat.partials.header')
   @include('masyarakat.partials.navbar')
   @include('masyarakat.content.sku')
-  
+  @include('masyarakat.partials.footer')
+  include('masyarakat.partials.profile')
 </body>
 </html>
