@@ -22,6 +22,15 @@ Route::middleware('auth')->group(function () {
 Route::get('/masyarakat', function () {
     return view('masyarakat.user');
 });
+// routes/web.php
+
+Route::get('/beranda', function () {
+    return view('masyarakat.content.beranda'); // Halaman Beranda
+});
+
+Route::get('/profile', function () {
+    return view('masyarakat.content.profile'); // Halaman Profil Desa
+});
 
 
 require __DIR__.'/auth.php';
