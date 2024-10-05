@@ -27,80 +27,81 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
     transition: background-color 0.3s ease; /* Animasi perubahan warna */
     font-family: 'Poppins';
-  }
+    z-index: 1000; /* Tambahkan z-index yang lebih tinggi */
+}
 
-  nav a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px; /* Berikan sedikit border radius */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi animasi hover */
-  }
+}
 
-  nav a:hover {
+nav a:hover {
     background-color: #2C5A9D; /* Warna hover */
     transform: translateY(-5px); /* Efek mengangkat saat hover */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Tambah bayangan saat hover */
-  }
+}
 
-  .left-menu {
+.left-menu {
     display: flex;
-  }
+}
 
-  .right-menu {
+.right-menu {
     display: flex;
     align-items: center;
-  }
+}
 
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
+    z-index: 1000; /* Pastikan dropdown memiliki z-index yang tinggi */
+}
 
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 9999; /* Pastikan dropdown content ada di atas */
     opacity: 0;
     transform: translateY(10px); /* Mulai dari posisi bawah */
     transition: all 0.3s ease;
     border-radius: 5px;
-  }
+}
 
-  .dropdown-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     transition: background-color 0.3s ease, padding-left 0.3s ease; /* Tambahkan animasi saat hover */
-  }
+}
 
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #2C5A9D;
     color: white;
     padding-left: 20px; /* Geser ke kanan saat hover */
-  }
+}
 
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
     opacity: 1;
     transform: translateY(0); /* Animasi muncul dari bawah */
-  }
+}
 
-  /* Pastikan selector arrow benar untuk animasi rotasi */
-  .dropdown:hover .arrow {
-    transform: rotate(180deg);
-  }
+.dropdown:hover > a {
+    background-color: #2C5A9D; /* Warna background saat hover dropdown */
+}
 
-  .arrow {
+.arrow {
     margin-left: 5px;
     transition: transform 0.3s ease; /* Animasi rotasi */
-  }
+}
 
-  .dropdown:hover > a {
-    background-color: #2C5A9D; /* Warna background saat hover dropdown */
-  }
+.dropdown:hover .arrow {
+    transform: rotate(180deg); /* Rotasi animasi untuk panah */
+}
 </style>
