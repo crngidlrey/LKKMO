@@ -32,7 +32,7 @@
                 dengan lembaga desa yang ada. - Meningkatkan
                 kesejahtraan masyarakat desa dengan meningkatkan
                 sarana dan prasarana ekonomi warga. <br>
-                2. PembangunanJangka Pendek
+                2. Pembangunan Jangka Pendek
                 </p>
             </div>
         </div>
@@ -48,15 +48,13 @@
 
     .konten_informasi {       
         display: flex; 
-        justify-content: center; 
         width: 100%; 
         margin: 0 auto; 
     }
 
     .profil_informasi {
         width: 100%; 
-        height: 500px;
-        padding: 15px;
+        height: 430px;
         position: relative; 
         overflow: hidden; 
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -91,21 +89,21 @@
         background-color: #2C5A9D; 
         padding: 20px; 
         border-radius: 8px; 
-        width: 42%; 
+        width: 45%; 
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-        margin: 10px; 
+        margin: 22px; 
         height: auto; 
         min-width: 250px; 
     }
 
     .konten_informasi_box p {
-        font-size: 1.2rem; 
+        font-size: 17px; 
         text-align: justify;
         line-height : 1.5;
     }
 
     .konten_informasi_box .title-info {
-        font-size : 25px;
+        font-size : 22px;
         text-align : center;
     }
     /* Responsif untuk layar lebih kecil */
