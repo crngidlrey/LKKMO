@@ -64,12 +64,12 @@
         display: flex; 
         justify-content: center; 
         width: 100%; 
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
     .profil_layanan {
         width: 100%; 
-        height: 500px;
+        height: 400px;
         padding: 15px;
         position: relative; 
         overflow: hidden; 
@@ -97,7 +97,7 @@
         z-index: 2; 
         position: relative; 
         max-width: 80%; 
-        margin: 20px auto; 
+        margin: 40px auto; 
         flex-wrap: wrap; 
     }
 
