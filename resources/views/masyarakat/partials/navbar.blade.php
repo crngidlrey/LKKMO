@@ -2,7 +2,7 @@
   <div class="left-menu">
     <a href="/beranda">Beranda</a>
     <a href="/profile">Profil Desa</a>
-    <a href="#">Layanan</a>
+    <a href="/layanan">Layanan</a>
     <a href="#">Informasi</a>
   </div>
   <div class="right-menu">

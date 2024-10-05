@@ -19,5 +19,6 @@
   @include('masyarakat.partials.footer')
   @include('masyarakat.content.beranda')
   @include('masyarakat.content.profile')
+  @include('masyarakat.content.layanan')
 </body>
 </html>

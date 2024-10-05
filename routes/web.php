@@ -32,5 +32,9 @@ Route::get('/profile', function () {
     return view('masyarakat.content.profile'); // Halaman Profil Desa
 });
 
+Route::get('/layanan', function () {
+    return view('masyarakat.content.layanan'); // Halaman layanan
+});
+
 
 require __DIR__.'/auth.php';
