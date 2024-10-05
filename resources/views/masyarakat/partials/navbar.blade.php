@@ -3,7 +3,7 @@
     <a href="/beranda">Beranda</a>
     <a href="/profile">Profil Desa</a>
     <a href="/layanan">Layanan</a>
-    <a href="#">Informasi</a>
+    <a href="/informasi">Informasi</a>
   </div>
   <div class="right-menu">
     <div class="dropdown">

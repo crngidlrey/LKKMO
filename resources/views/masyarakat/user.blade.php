@@ -20,5 +20,6 @@
   @include('masyarakat.content.beranda')
   @include('masyarakat.content.profile')
   @include('masyarakat.content.layanan')
+  @include('masyarakat.content.informasi')
 </body>
 </html>

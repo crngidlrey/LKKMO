@@ -36,5 +36,8 @@ Route::get('/layanan', function () {
     return view('masyarakat.content.layanan'); // Halaman layanan
 });
 
+Route::get('/informasi', function () {
+    return view('masyarakat.content.informasi'); // Halaman informasi
+});
 
 require __DIR__.'/auth.php';
