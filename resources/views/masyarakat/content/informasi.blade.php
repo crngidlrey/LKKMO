@@ -1,10 +1,10 @@
 @include('masyarakat.partials.header') <!-- Memanggil header.blade.php -->
 @include('masyarakat.partials.navbar') <!-- Memanggil navbar.blade.php -->
 
-<div class="konten_layanan">
-    <div class="profil_layanan">
-        <div class="konten_layanan_box_container">
-            <div class="konten_layanan_box">
+<div class="konten_informasi">
+    <div class="profil_informasi">
+        <div class="konten_informasi_box_container">
+            <div class="konten_informasi_box">
                 <p class="title-info" >Sejarah Desa <br><br></p>
                 <p>
                 Sabah Balau merupakan salah satu
@@ -19,7 +19,7 @@
                 antarwarga.
                 </p>
             </div>
-            <div class="konten_layanan_box">
+            <div class="konten_informasi_box">
                 <p>Visi : <br>
                 Menjadi desa mandiri yang berlandaskan nilai-nilai
                 kebersamaan, religiusitas, dan kemajuan ekonomi, serta
@@ -46,14 +46,14 @@
         box-sizing: border-box; 
     }
 
-    .konten_layanan {       
+    .konten_informasi {       
         display: flex; 
         justify-content: center; 
         width: 100%; 
         margin: 0 auto; 
     }
 
-    .profil_layanan {
+    .profil_informasi {
         width: 100%; 
         height: 500px;
         padding: 15px;
@@ -66,7 +66,7 @@
         color: white;
     }
 
-    .profil_layanan::before {
+    .profil_informasi::before {
         content: "";
         position: absolute; 
         top: 0;
@@ -77,7 +77,7 @@
         z-index: 1; 
     }
 
-    .konten_layanan_box_container {
+    .konten_informasi_box_container {
         display: flex; 
         justify-content: space-between; 
         z-index: 2; 
@@ -87,7 +87,7 @@
         flex-wrap: wrap; 
     }
 
-    .konten_layanan_box {
+    .konten_informasi_box {
         background-color: #2C5A9D; 
         padding: 20px; 
         border-radius: 8px; 
@@ -98,23 +98,23 @@
         min-width: 250px; 
     }
 
-    .konten_layanan_box p {
+    .konten_informasi_box p {
         font-size: 1.2rem; 
         text-align: justify;
         line-height : 1.5;
     }
 
-    .konten_layanan_box .title-info {
+    .konten_informasi_box .title-info {
         font-size : 25px;
         text-align : center;
     }
     /* Responsif untuk layar lebih kecil */
     @media (max-width: 768px) {
-        .konten_layanan_box {
+        .konten_informasi_box {
             width: 100%;
         }
 
-        .konten_layanan_box_container {
+        .konten_informasi_box_container {
             flex-direction: column; 
             align-items: center; 
         }
