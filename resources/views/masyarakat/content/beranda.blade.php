@@ -1,101 +1,174 @@
-<!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-<div class="slider-container">
-    <div class="slider-img">
-        <div class="img-slider-box">
-            <a href="https://link-tujuan-1.com" class="hover-effect">
-                <img src="../img/slider-1.jpg" alt="">
-            </a>
-        </div>
-        <div class="img-slider-box">
-            <a href="https://link-tujuan-2.com" class="hover-effect">
-                <img src="../img/slider-2.jpg" alt="">
-            </a>
-        </div>
-        <div class="img-slider-box">
-            <a href="https://link-tujuan-3.com" class="hover-effect">
-                <img src="../img/slider-3.jpg" alt="">
-            </a>
-        </div>
-        <div class="img-slider-box">
-            <a href="https://link-tujuan-4.com" class="hover-effect">
-                <img src="../img/slider-4.jpg" alt="">
-            </a>
-        </div>
-        <div class="img-slider-box">
-            <a href="https://link-tujuan-5.com" class="hover-effect">
-                <img src="../img/slider-5.jpg" alt="">
-            </a>
+<div class="bg">
+    <div class="bg-overlay">
+        <div class="carousel-container">
+            <button class="carousel-button prev">❮</button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="../img/carousel_1.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carousel_2.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carousel_3.jpg" alt="Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carousel_4.jpg" alt="Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carousel_5.jpg" alt="Image 5">
+                </div>
+            </div>
+            <button class="carousel-button next">❯</button>
         </div>
     </div>
 </div>
+    
 <!-- JavaScript -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script>
-    $('.slider-img').flickity({
-        // options
-        wrapAround: true, // biar kalau gambar terakhir selesai, balik lagi ke gambar awal
-        freeScroll: true, // bisa menggeser gambar secara bebas tanpa harus tekan tombol
-        autoPlay: 3000,  // gambarnya geser otomatis setelah 3 detik
-        pauseAutoPlayOnHover: false,  // autoplay tetap berjalan saat hover
-        prevNextButtons: true,  // Menampilkan tombol next/prev
-        pageDots: true,  // menampilkan titik - titik (pagination) dibawah gambar
-        draggable: true,  // Bisa digeser secara manual
+    const carousel = document.querySelector('.carousel');
+    const items = document.querySelectorAll('.carousel-item');
+    const nextButton = document.querySelector('.carousel-button.next');
+    const prevButton = document.querySelector('.carousel-button.prev');
+    let currentIndex = 0;
+    const totalItems = items.length;
+
+    function updateCarousel() {
+        items.forEach((item, index) => {
+            item.style.transform = 'scale(0.7) translateX(0)';
+            item.style.opacity = '0';
+            item.style.zIndex = '0';
+
+            // Kartu tengah (utama)
+            if (index === currentIndex) {
+                item.style.transform = 'scale(1) translateX(0)';
+                item.style.opacity = '1';
+                item.style.zIndex = '2';
+            }
+
+            // Kartu di sebelah kanan
+            if (index === (currentIndex + 1) % totalItems) {
+                item.style.transform = 'scale(0.85) translateX(200px)';
+                item.style.opacity = '1';
+                item.style.zIndex = '1';
+            }
+
+            // Kartu di sebelah kiri
+            if (index === (currentIndex - 1 + totalItems) % totalItems) {
+                item.style.transform = 'scale(0.85) translateX(-200px)';
+                item.style.opacity = '1';
+                item.style.zIndex = '1';
+            }
+        });
+    }
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalItems;
+        updateCarousel();
     });
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        updateCarousel();
+    });
+
+    updateCarousel(); // Initialize carousel
 </script>
 
+
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .img-slider-box {
-        width: 50%;
-        height: 500px;
-        margin: 0 15px;
-        overflow: hidden;
-        position: relative; 
-    }
+.bg {
+    background-image: url('../img/background_content.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tinggi seluruh viewport */
+    width: 100%; 
+    position: relative;
+}
 
-    .img-slider-box img {
-        width: 100%;
-        height: 450px;
-        object-fit: cover;
-    }
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay transparan */
+    display: flex;
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    z-index: 1; 
+}
 
-    .hover-effect {
-        display: block; 
-        position: relative; 
-    }
+.carousel-container {
+    position: relative;
+    width: 500px; /* Ukuran container carousel */
+    height: 500px; /* Tinggi container carousel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    z-index: 2;
+}
 
-    /* Efek hover */
-    .hover-effect::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(44, 90, 157, 0.5); 
-        opacity: 0; 
-        transition: opacity 0.3s; 
-    }
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
 
-    .hover-effect:hover::after {
-        opacity: 1; 
-    }
+.carousel-item {
+    position: absolute;
+    width: 80%; /* Gambar hampir memenuhi section */
+    height: 100%; /* Tinggi gambar mengikuti section */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease, z-index 0.5s ease;
+}
 
-    .flickity-page-dots {
-        bottom: 0;  
-    }
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
-    /* Responsif */
-    @media (max-width: 768px) {
-        .img-slider-box {
-            width: 90%;
-        }
-    }
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 30px;
+}
+
+.carousel-button.next {
+    right: 30px;
+}
+    
 </style>
