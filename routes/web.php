@@ -22,6 +22,11 @@ Route::middleware('auth')->group(function () {
 Route::get('/sku', function () {
     return view('masyarakat.user-sku');
 });
+
+Route::get('/sktm', function () {
+    return view('masyarakat.user-sktm');
+});
+
 // routes/web.php
 
 Route::get('/beranda', function () {
@@ -38,6 +43,10 @@ Route::get('/layanan', function () {
 
 Route::get('/informasi', function () {
     return view('masyarakat.user-informasi'); // Halaman informasi
+});
+
+Route::get('/user-login', function () {
+    return view('masyarakat.user-login'); // Halaman informasi
 });
 
 require __DIR__.'/auth.php';

@@ -10,11 +10,12 @@
         <a href="#" id="layanan-mandiri">Layanan Mandiri <span class="arrow">▼</span></a>
         <div class="dropdown-content">
           <a href="/sku" id="sku">Surat Keterangan Usaha</a>
-          <a href="#">Submenu 2</a>
-          <a href="#">Submenu 3</a>
+          <a href="/sktm" id="sktm">Surat Keterangan Tidak Mampu</a>
+          <a href="#">Surat Pengantar SKCK</a>
+          <a href="#">Status Surat</a>
         </div>
       </div>
-      <a href="#" id="masuk">Masuk</a>
+      <a href="/user-login" id="masuk">Masuk</a>
     </div>
   </nav>
   
@@ -119,6 +120,8 @@
       "/profile": "profile",
       "/layanan": "layanan",
       "/informasi": "informasi",
+      "/sku": "sku",
+      "/sktm": "sktm",
       "/sku": "sku",
       "/masuk": "masuk"
     };
