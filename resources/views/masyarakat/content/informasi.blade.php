@@ -87,14 +87,21 @@
 
 .konten_informasi_box {
     background-color: #1d2951;
-    padding: 20px; 
-    border-radius: 8px; 
-    width: 45%; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-    margin: 20px; 
-    height: auto; 
-    min-width: 250px; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    height: auto;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan animasi */
 }
+
+.konten_informasi_box:hover {
+    transform: scale(1.05); /* Membesarkan ukuran box saat di-hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Menambah shadow saat di-hover */
+}
+
 
 .konten_informasi_box p, .konten_informasi_box ol {
     color: white;

@@ -67,16 +67,23 @@
     }
 
     .profil_wilayah, .gambar_peta {
-        width: 45%; /* Batasi lebar agar tidak terlalu lebar */
-        max-width: 600px; /* Tambahkan max-width untuk kontrol lebar maksimal */
-        padding: 15px;
-        margin: 10px;
-        position: relative; 
-        z-index: 2; /* Letakkan di atas overlay */
-        color: white;
-        background-color: rgba(29, 41, 81, 1);
-        border-radius: 10px;
-    }
+    width: 45%; /* Batasi lebar agar tidak terlalu lebar */
+    max-width: 600px; /* Tambahkan max-width untuk kontrol lebar maksimal */
+    padding: 15px;
+    margin: 10px;
+    position: relative; 
+    z-index: 2; /* Letakkan di atas overlay */
+    color: white;
+    background-color: rgba(29, 41, 81, 1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan animasi transisi */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek shadow awal */
+}
+
+.profil_wilayah:hover, .gambar_peta:hover {
+    transform: scale(1.05); /* Membesarkan ukuran saat di-hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Meningkatkan shadow saat di-hover */
+}
 
     .profil_wilayah h4, .profil_wilayah ol, .gambar_peta h4 {
         position: relative;

@@ -105,8 +105,14 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
         margin: 10px; 
         height: auto; 
-        min-width: 250px; 
+        min-width: 250px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan animasi */
     }
+
+    .konten_layanan_box:hover {
+    transform: scale(1.05); /* Membesarkan ukuran box saat di-hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Menambah shadow saat di-hover */
+}
 
     .konten_layanan_box p {
         text-align: justify;

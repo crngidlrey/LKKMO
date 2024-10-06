@@ -109,6 +109,7 @@
         background-color: #1d2951;
         padding: 2rem;
         border-radius: 0.5rem;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Box shadow pada container form */
         font-family: 'Poppins' !important;
     }
   

@@ -118,6 +118,7 @@
         padding: 2rem;
         border-radius: 0.5rem;
         font-family: 'Poppins' !important;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Box shadow pada container form */
     }
   
     .input-style {

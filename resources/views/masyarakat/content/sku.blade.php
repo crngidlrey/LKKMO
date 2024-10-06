@@ -116,12 +116,12 @@
     }
   
     .form-container {
-        background-color: #1d2951;
-        padding: 2rem;
-        border-radius: 0.5rem;
-        font-family: 'Poppins' !important;
-    }
-  
+    background-color: #1d2951;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    font-family: 'Poppins' !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Box shadow pada container form */
+}
     .input-style {
         background-color: rgba(255, 255, 255, 0.2); /* Warna sedikit transparan */
         border: 1px solid #ccc;
