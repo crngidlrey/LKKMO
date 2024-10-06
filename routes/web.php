@@ -27,6 +27,10 @@ Route::get('/sktm', function () {
     return view('masyarakat.user-sktm');
 });
 
+Route::get('/skck', function () {
+    return view('masyarakat.user-skck');
+});
+
 // routes/web.php
 
 Route::get('/beranda', function () {

@@ -11,7 +11,7 @@
         <div class="dropdown-content">
           <a href="/sku" id="sku">Surat Keterangan Usaha</a>
           <a href="/sktm" id="sktm">Surat Keterangan Tidak Mampu</a>
-          <a href="#">Surat Pengantar SKCK</a>
+          <a href="/skck" id="skck">Surat Pengantar SKCK</a>
           <a href="#">Status Surat</a>
         </div>
       </div>
@@ -47,6 +47,7 @@
   nav a.active {
       background-color: #2C5A9D; /* Warna untuk menu yang aktif */
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+      color: #ffffff;
   }
   
   .left-menu {
@@ -122,7 +123,7 @@
       "/informasi": "informasi",
       "/sku": "sku",
       "/sktm": "sktm",
-      "/sku": "sku",
+      "/skck": "skck",
       "/masuk": "masuk"
     };
   
