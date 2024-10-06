@@ -1,6 +1,3 @@
-@include('masyarakat.partials.header') <!-- Memanggil header.blade.php -->
-@include('masyarakat.partials.navbar') <!-- Memanggil navbar.blade.php -->
-
 <div class="konten_profile">
     <div class="profil_wilayah">
         <h3>Profil Wilayah</h3>
@@ -35,9 +32,6 @@
             loading="lazy"></iframe>
     </div>
 </div>
-
-@include('masyarakat.partials.footer') <!-- Memanggil footer.blade.php -->
-
 <style>
     * {
         margin: 0;

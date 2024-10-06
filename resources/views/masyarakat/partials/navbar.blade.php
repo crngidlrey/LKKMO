@@ -9,7 +9,7 @@
     <div class="dropdown">
       <a href="#">Layanan Mandiri <span class="arrow">▼</span></a>
       <div class="dropdown-content">
-        <a href="#">Submenu 1</a>
+        <a href="/sku">Surat Keterangan Usaha</a>
         <a href="#">Submenu 2</a>
         <a href="#">Submenu 3</a>
       </div>

@@ -1,6 +1,3 @@
-@include('masyarakat.partials.header') <!-- Memanggil header.blade.php -->
-@include('masyarakat.partials.navbar') <!-- Memanggil navbar.blade.php -->
-
 <div class="konten_layanan">
     <div class="profil_layanan">
         <div class="konten_layanan_box_container">
@@ -130,5 +127,3 @@
     }
 
 </style>
-
-@include('masyarakat.partials.footer') <!-- Memanggil footer.blade.php -->

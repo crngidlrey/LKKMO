@@ -1,8 +1,3 @@
-<!-- resources/views/masyarakat/partials/profile.blade.php -->
-
-@include('masyarakat.partials.header') <!-- Memanggil header.blade.php -->
-@include('masyarakat.partials.navbar') <!-- Memanggil navbar.blade.php -->
-
 <!-- CSS -->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -36,9 +31,6 @@
         </div>
     </div>
 </div>
-
-@include('masyarakat.partials.footer') <!-- Memanggil footer.blade.php -->
-
 <!-- JavaScript -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script>

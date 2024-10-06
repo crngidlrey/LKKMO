@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('masyarakat.user-beranda');
 });
 
 Route::get('/dashboard', function () {
@@ -19,25 +19,25 @@ Route::middleware('auth')->group(function () {
 
 // File: routes/web.php
 
-Route::get('/masyarakat', function () {
-    return view('masyarakat.user');
+Route::get('/sku', function () {
+    return view('masyarakat.user-sku');
 });
 // routes/web.php
 
 Route::get('/beranda', function () {
-    return view('masyarakat.content.beranda'); // Halaman Beranda
+    return view('masyarakat.user-beranda'); // Halaman Beranda
 });
 
 Route::get('/profile', function () {
-    return view('masyarakat.content.profile'); // Halaman Profil Desa
+    return view('masyarakat.user-profile'); // Halaman Profil Desa
 });
 
 Route::get('/layanan', function () {
-    return view('masyarakat.content.layanan'); // Halaman layanan
+    return view('masyarakat.user-layanan'); // Halaman layanan
 });
 
 Route::get('/informasi', function () {
-    return view('masyarakat.content.informasi'); // Halaman informasi
+    return view('masyarakat.user-informasi'); // Halaman informasi
 });
 
 require __DIR__.'/auth.php';
