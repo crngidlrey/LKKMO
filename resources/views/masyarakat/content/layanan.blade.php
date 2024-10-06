@@ -16,7 +16,7 @@
                 </p>
             </div>
             <div class="konten_layanan_box">
-                <p>Desa Sabah Balaujuga melayani 
+                <p>Desa Sabah Balau juga melayani 
                     pembuatan surat SKTM Selain
                     untuk berobat, SKTM
                     juga bisa digunakan
@@ -54,7 +54,8 @@
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box; 
+        box-sizing: border-box;
+        font-family: 'Poppins';
     }
 
     .konten_layanan {       
@@ -65,16 +66,15 @@
     }
 
     .profil_layanan {
+        background-image: url('../img/background_content.jpg'); 
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center; /* Memusatkan secara horizontal */
+        align-items: center; /* Memusatkan secara vertikal */
+        height: 100vh; /* Tinggi seluruh viewport */
         width: 100%; 
-        height: 400px;
-        padding: 15px;
-        position: relative; 
-        overflow: hidden; 
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        background-image: url("../img/slider-4.jpg"); 
-        background-size: cover; 
-        background-position: center; 
-        color: white;
+        position: relative; /* Untuk pseudo-elemen overlay */
     }
 
     .profil_layanan::before {
@@ -84,7 +84,6 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(44, 90, 157, 0.5); 
         z-index: 1; 
     }
 
@@ -99,7 +98,7 @@
     }
 
     .konten_layanan_box {
-        background-color: #2C5A9D; 
+        background-color: #1d2951; 
         padding: 20px; 
         border-radius: 8px; 
         width: 30%; 
@@ -110,8 +109,8 @@
     }
 
     .konten_layanan_box p {
-        font-size: 1.2rem; 
         text-align: justify;
+        color: white;
     }
 
     /* Responsif untuk layar lebih kecil */
