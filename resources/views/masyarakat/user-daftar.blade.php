@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Login Page</title>
+    <title>Sign Up Page</title>
 <style>
   * {
     margin: 0;
@@ -40,7 +40,7 @@
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 330px;
+    height: 465px;
     width: 400px;
 }
 
@@ -79,7 +79,6 @@ h2 {
 }
 
 a {
-
     color: #2C5A9D;
     text-decoration: none;
 }
@@ -90,17 +89,23 @@ a {
   <div class="bg">
     <div class="login-container">
       <div class="login-box">
-        <h2>Masuk</h2>
+        <h2>Daftar</h2>
         <form action="#">
+          <div class="input-group">
+            <input type="text" placeholder="Nama Lengkap" required>
+          </div>
           <div class="input-group">
             <input type="email" placeholder="Email" required>
           </div>
           <div class="input-group">
             <input type="password" placeholder="Password" required>
           </div>
-          <button type="submit" class="btn-login">Masuk</button>
+          <div class="input-group">
+            <input type="password" placeholder="Konfirmasi Password" required>
+          </div>
+          <button type="submit" class="btn-login">Daftar</button>
         </form>
-        <p>Belum punya akun? <a href="/daftar">Daftar</a> </p>
+        <p>Sudah punya akun? <a href="/user-login">Masuk</a> </p>
       </div>
     </div>
   </div>

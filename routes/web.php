@@ -53,4 +53,8 @@ Route::get('/user-login', function () {
     return view('masyarakat.user-login'); // Halaman informasi
 });
 
+Route::get('/daftar', function () {
+    return view('masyarakat.user-daftar'); // Halaman informasi
+});
+
 require __DIR__.'/auth.php';
